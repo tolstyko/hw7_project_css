@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  color: #333;
+  text-align: justify;
+}
+.menu {
+  background: #edcc8f;
+  font-size: 20px;
+  margin: 15px;
+  padding: 15px;
+}
+.menu li {
+  list-style-type: none;
+  padding: 5px;
+}
+.menu a {
+  text-decoration: none;
+}
+.menu a:hover {
+  background: #dfa437;
+}
+.main-text {
+  background: #fbf4e7;
+  margin: 15px;
+  padding: 15px;
+}
+.main-text a {
+  font-size: 20px;
+}
+.main-text a:hover {
+  color: #808080;
+}
+.main-text a:focus {
+  outline: none;
+}
+.main-text div {
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
