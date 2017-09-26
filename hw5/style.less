@@ -1,0 +1,75 @@
+@pink: rgb(229, 32, 148);
+@green: rgb(157, 200, 25);
+@blue: rgb(63, 143, 223);
+@red: rgb(235, 61, 61);
+@orange: rgb(255, 110, 26);
+@yellow: rgb(255, 190, 45);
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo-line{
+    height: 300px;
+    background-image: url(img/backImage.jpg);
+    position: relative;
+    width: 100%;
+    img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%; -50%);
+        width: 450px;
+        max-width: 90%;
+        opacity: 0.95;
+        box-shadow: -2px 2px 3px rgba(0,0,0,0.5);
+    }
+}
+.button-area {
+    margin: 10px;
+    padding: 15px 25px;
+    border: solid 1px rgb(223, 223, 223);
+    .button-area__button-case{
+        margin: 15px;
+    }
+    .button-area__button{
+        padding: 5px 10px;
+        box-shadow: -2px 2px 3px rgba(0,0,0,0.5);
+        border-radius: 5px;
+        font-weight: bold;
+        color: white;
+        border: 0;
+    }
+    .button-area__button_color_pink{
+        background: linear-gradient(to top, @pink, lighten(@pink, 15%));
+    }
+    .button-area__button_color_green{
+        background: linear-gradient(to top, @green, lighten(@green, 15%));
+    }
+    .button-area__button_color_blue{
+        background: linear-gradient(to top, @blue, lighten(@blue, 15%));
+    }
+    .button-area__button_color_red{
+        background: linear-gradient(to top, @red, lighten(@red, 15%));
+    }
+    .button-area__button_color_orange{
+        background: linear-gradient(to top, @orange, lighten(@orange, 15%));
+    }
+    .button-area__button_color_yellow{
+        background: linear-gradient(to top, @yellow, lighten(@yellow, 15%));
+    }
+    .button-area__button_size_xs{
+        font-size: 8px;
+    }
+    .button-area__button_size_s{
+        font-size: 10px;
+    }
+    .button-area__button_size_m{
+        font-size: 11px;
+    }
+    .button-area__button_size_l{
+        font-size: 25px;
+    }
+}
+.button-area_dark-side{
+    background-color: rgb(55, 55, 55)
+}
