@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Homework6</title>
+    <link rel='stylesheet' href="style.css">
+</head>
+
+<body>
+    <form class='event-form'>
+        <div class='event-form__text-area text-area'>
+            <div class='text-area__name'>
+                Event name
+            </div>
+            <input class='text-area__input text-area__input_bottom-line' type='text' value="Mel's birthday celebration" required>
+        </div>
+        <div class='event-form__date-area date-area'>
+            <div class='date-area__name'>
+                From
+            </div>
+            <input class='date-area__date' type="date" required min="2017-09-25" value="2014-02-10">
+            <input class='date-area__time' type="time" value="19:30">
+            <div class='date-area__error-message'>
+                Date occurs in the past
+            </div>
+        </div>
+        <div class='event-form__date-area date-area'>
+            <div class='date-area__name'>
+                To
+            </div>
+            <input class='date-area__date' type="date" required min="2017-09-25" value="2014-02-10">
+            <input class='date-area__time' type="time" value="23:30">
+            <div class='date-area__error-message'>
+                Date occurs in the past
+            </div>
+        </div>
+        <div class='event-form__text-area text-area'>
+            <div class='text-area__name'>Description</div>
+            <textarea class='text-area__input' type='text' rows="2">Come help celebrate Mel's birthday with dinner, drinks and putt-putt
+        </textarea>
+        </div>
+        <div class="event-form__btn-ok btn-ok">
+            <a href='frame.html' target="frame_area"><img class='btn-ok__img' src="ok_button.jpg" alt='ok'></a>
+        </div>
+        <iframe class='event-form__frame' name='frame_area' src='frame0.html'></iframe>
+    </form>
+</body>
+
+</html>
