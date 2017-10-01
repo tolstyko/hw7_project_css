@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+.hw7-big-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hw7-big-container__block{
+    box-sizing: border-box;
+}
+
+/* modificator size*/
+
+.hw7-big-container__block_size_l {
+    width: 50%;/*33.3%;*/
+}
+
+.hw7-big-container__block_size_s {
+    width: 25%;/*16.6%;*/
+}
+
+@media screen and (max-width:1400px) {
+    .hw7-big-container__block_size_l {
+        width: 50%;
+    }
+    .hw7-big-container__block_size_s {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .hw7-big-container__block_size_l {
+        width: 100%;
+    }
+    .hw7-big-container__block_size_s {
+        width: 50%;
+    }
+}
+
+.hw7-block__photo_height_s{
+    min-height: 225px;
+}
+
+.hw7-block__photo_height_l{
+    min-height: 450px;
+}
+
+.hw7-big-container__block_text_center{
+    text-align: center;
+}
+
+/* modificator color */
+.hw7-block_color_beige {
+    background-color: rgb(240, 226, 215);
+    color: rgb(64, 50, 67);
+}
+
+.hw7-block_color_white {
+    background-color: rgb(255, 255, 255);
+    color: rgb(64, 50, 67);
+}
+
+.hw7-block_color_yellow {
+    background-color: rgb(228, 174, 88);
+    color: rgb(255, 249, 226);
+}
+
+.hw7-block_color_red {
+    background-color: rgb(233, 113, 76);
+    color: rgb(255, 249, 226);
+}
+
+.hw7-block_color_black {
+    background-color: rgb(22, 22, 22);
+    color: rgb(255, 249, 226);
+}
+
+.hw7-block_padding{
+    padding: 40px;
+}
+
+/*navigation menu*/
+.hw7-block__main-navigation {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hw7-main-navigation__point {
+    text-decoration: none;
+    display: inline;
+    font-size: 10px;
+}
+
+.hw7-main-navigation__ref{
+    text-decoration: none;
+    color: rgb(64, 50, 67);
+}
+
+.hw7-main-navigation__ref:hover{
+    color: rgb(228, 174, 88);
+}
+
+/*fonts and margins for different texts*/
+.hw7-block__greeting {
+    margin-top: 130px;
+    margin-bottom: 15px;
+    font-size: 9px;
+}
+
+.hw7-block__title {
+    font-size: 28px;
+}
+
+.hw7-block__subtitle{
+    font-size: 12px;
+    margin: 15px 0px;
+}
+
+.hw7-block__maintext {
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+/*button get started*/
+.hw7-block__button {
+    background-color: rgb(240, 226, 215);
+    width: 120px;
+    height: 30px;
+    border: black 2px solid;
+    border-radius: 15px;
+    font-size: 10px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+/*progress scale*/
+.hw7-block__skills{
+    margin-top: 15px;
+}
+
+.hw7-skills__progress-scale-text{
+    font-size: 12px;
+    color: black;
+    position: relative;
+    top: 13px;
+}
+
+.hw7-skills__progress-scale{
+    height: 3px;
+    width: 100%;
+}
+
+.hw7-block__icon{
+    margin-bottom: 10px;
+}
+
+/*experience and education lists*/
+.hw7-list__item{
+    margin-top: 15px;
+}
+
+.hw7-list__text{
+    position: relative;
+    left: 50px;
+    padding-right: 50px;
+}
+
+.hw7-list__icon{
+    position: absolute;
+}
+
+.hw7-list__name{
+    font-size: 16px;
+    display: inline-block;
+}
+
+.hw7-list__date{
+    display: inline-block;
+    font-size: 12px;
+    color: rgb(87, 50, 44);
+}
+
+.hw7-list__description{
+    font-size: 12px;
+    margin-top: 10px; 
+}
+
+/*photoline*/
+.hw7-big-container__photo-line {
+    background-image: url(../images/6.jpg);
+    background-size: 160% auto;
+    width: 100%;
+    height: 350px;
+    background-position: center;
+}
+
+.hw7-photo-line__dark-window{
+    width: 100%;
+    height: 100%;
+    background: rgba(51, 51, 51, 0.7);
+    position: relative;
+}
+
+.hw7-photo-line__textarea{
+    color: rgb(255, 249, 226);
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hw7-photo-line__maintext{
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.hw7-photo-line__specification{
+    font-size: 12px;
+}
+
+/*input form*/
+.hw7-message-form__input{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: rgb(228, 174, 88) 1px solid;
+    background-color: rgb(233, 113, 76);
+    line-height: 30px;
+}
+.hw7-message-form__input::-webkit-input-placeholder{
+    color: rgb(255, 249, 226);
+}
+.hw7-message-form__input::-moz-placeholder{
+    color: rgb(255, 249, 226);
+}
+.hw7-message-form__input:-moz-placeholder{
+    color: rgb(255, 249, 226);
+}
+.hw7-message-form__input:-ms-input-placeholder{
+    color: rgb(255, 249, 226);
+}
+.hw7-message-form__input:focus{
+    outline: none;
+}
+
+.hw7-message-form__button{
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/*contacts*/
+.hw7-contacts__title{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.hw7-contacts__item{
+    margin: 10px 0px;
+    font-size: 12px;
+}
+
+.hw7-contacts__icon{
+    position: absolute;
+}
+
+.hw7-contacts__phone{
+    position:relative;
+    left: 20px;
+    padding-right: 20px;
+}
+
+.hw7-contacts__ref{
+    text-decoration: none;
+    color: rgb(228, 174, 88);
+    position:relative;
+    left: 20px;
+}
+
+/*footer*/
+.hw7-wrapper__footer{
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+
+.hw7-footer__content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(154, 158, 159);
+    font-size: 14px;
+    width: 100%;
+}
+
+.hw7-footer__ref{
+    text-decoration: none;
+    color: rgb(228, 174, 88);
+}
+
+.hw7-footer__icon{
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.hw7-footer__icon>a{
+    text-decoration: none;
+    color: rgb(154, 158, 159);
+}
+
+/* photo */
+.hw7-block__photo{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+
+.hw7-block__photo_orientation_hor{
+    background-size: 150% auto;
+}
+
+.hw7-block__photo_orientation_vert{
+    background-size: auto 120%;
+}
+
+.hw7-block__photo_photo_5 {
+    background-image: url(../images/5.jpg);  
+}
+
+.hw7-block__photo_photo_1 {
+    background-image: url(../images/1.jpg);
+}
+
+.hw7-block__photo_photo_4 {
+    background-image: url(../images/4.jpg);
+}
+
+.hw7-block__photo_photo_3 {
+    background-image: url(../images/3.jpg);
+}
+
+.hw7-block__photo_photo_2 {
+    background-image: url(../images/2.jpg);
+}
